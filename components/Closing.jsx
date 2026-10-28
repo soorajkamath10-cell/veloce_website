@@ -79,7 +79,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="foot-bar"><span>&copy; 2026 gAI Ventures</span><a href={CONTACT_URL} {...ext}>{CONTACT_EMAIL}</a></div>
+      <div className="foot-bar"><span>&copy; 2026 gAI Ventures</span><span className="foot-links"><a href="/privacy">Privacy policy</a><a href={CONTACT_URL} {...ext}>{CONTACT_EMAIL}</a></span></div>
     </footer>
   );
 }
