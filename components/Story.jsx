@@ -42,7 +42,7 @@ export function Announce() {
     <div className="announce">
       <div className="announce-in">
         <span className="announce-new">New</span>
-        <p>Calendar, Airbnb and Booking.com sync and direct bookings are now built in. No separate PMS needed.</p>
+        <p>Calendar, Airbnb and Booking.com sync and direct bookings are now built in. Run without a PMS, or keep yours alongside Veloce.</p>
         <a href="#platform">See what’s included</a>
       </div>
     </div>
@@ -52,10 +52,10 @@ export function Announce() {
 // ============ The loop ============
 
 const LOOP = [
-  { n: '01', who: 'Guest', h: 'Someone asks', p: 'A guest, caretaker or owner sends a WhatsApp message.', pos: 'n' },
+  { n: '01', who: 'Guest', h: 'Someone asks', p: 'A guest, caretaker or operator sends a WhatsApp message.', pos: 'n' },
   { n: '02', who: 'Veloce', h: 'Veloce routes it', p: 'Answers from your house guide, or sends it to the right person.', pos: 'e' },
   { n: '03', who: 'Staff', h: 'Work gets done', p: 'Staff accept, fix it and send a photo back in the chat.', pos: 's' },
-  { n: '04', who: 'Record', h: 'Your dashboard updates', p: 'Issues, bookings and money, by home, for the owner.', pos: 'w' },
+  { n: '04', who: 'Record', h: 'Your dashboard updates', p: 'Issues, bookings and money, by home, for the operator.', pos: 'w' },
 ];
 
 export function Loop() {
@@ -64,8 +64,8 @@ export function Loop() {
       <div className="loop-panel">
         <div className="loop-head">
           <Eyebrow>The loop</Eyebrow>
-          <h2 id="loop-h">One WhatsApp thread. <em>The whole operation.</em></h2>
-          <p>Nobody downloads an app. Guests, staff and owners keep the chat they already use.</p>
+          <h2 id="loop-h">Guests and staff message on WhatsApp. <em>Veloce gets it to the right person.</em></h2>
+          <p>Nobody downloads an app. Guests, staff and operators keep the chat they already use.</p>
         </div>
         <div className="orbit">
           <span className="orbit-ring r1" aria-hidden="true" />
@@ -93,7 +93,7 @@ export function Loop() {
 // ============ 01 Maintenance ============
 
 const MAINT = [
-  { icon: 'chat', h: 'Hear it during the stay', p: 'Guests message on WhatsApp or get a short call. Caretakers and owners report into the same list.' },
+  { icon: 'chat', h: 'Hear it during the stay', p: 'Guests message on WhatsApp or get a short call. Caretakers and operators report into the same list.' },
   { icon: 'wrench', h: 'Get it fixed', p: 'The right person gets the job on WhatsApp and a nudge until it’s done. Then the guest hears back.' },
   { icon: 'alert', h: 'Learn what breaks', p: 'When the same thing keeps breaking, you find out before the next guest does.' },
 ];
@@ -250,7 +250,7 @@ const MODULES = [
   { icon: 'desk', h: 'Direct bookings', p: 'Returning guests book with you, no commission.' },
   { icon: 'receipt', h: 'Expenses', p: 'Logged from a photo of the receipt.' },
   { icon: 'trend', h: 'Revenue', p: 'Payouts net of fees, stays and add-ons.' },
-  { icon: 'star', h: 'Owner reports', p: 'Ask a question on WhatsApp, get the answer.' },
+  { icon: 'star', h: 'Operator reports', p: 'Ask a question on WhatsApp, get the answer.' },
 ];
 
 export function Platform() {
@@ -270,8 +270,8 @@ export function Platform() {
         ))}
       </ul>
       <p className="mods-foot">
-        <b>Calendar, channel sync and direct bookings are built in, so a separate PMS can go.</b>{' '}
-        <span>Save up to $6,000 a year in PMS fees (<a href={PMS_SOURCE} {...ext}>reported Hostaway pricing, 30 listings, RoomMaster</a>).</span>
+        <b>Calendar, channel sync and direct bookings are built in, so you can run without a separate PMS.</b>{' '}
+        <span>Save up to $6,000 a year in PMS fees (<a href={PMS_SOURCE} {...ext}>reported Hostaway pricing, 30 listings, RoomMaster</a>). If you already use a PMS, Veloce works alongside it.</span>
       </p>
     </section>
   );
@@ -287,11 +287,11 @@ const OWNER = [
 
 export function Owners() {
   return (
-    <section className="wrap section" id="owners" aria-labelledby="owners-h">
+    <section className="wrap section" id="operators" aria-labelledby="operators-h">
       <div className="owners">
         <div>
-          <Eyebrow>For owners</Eyebrow>
-          <h2 id="owners-h">Better ratings, repeat stays and referrals. <em>Ask how it’s going on WhatsApp.</em></h2>
+          <Eyebrow>For operators</Eyebrow>
+          <h2 id="operators-h">Better ratings, repeat stays and referrals. <em>Ask how it’s going on WhatsApp.</em></h2>
           <Features items={OWNER} />
         </div>
         <div className="stage owner-stage">

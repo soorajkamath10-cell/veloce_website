@@ -611,7 +611,7 @@ function EndScreen({ g, onAgain }) {
         </div>
         <p>
           {g.handled} complaints resolved, {g.routedDone} of them routed by Veloce. In a real portfolio, Veloce
-          brings complaints from calls, WhatsApp, caretakers and owners into one place and gets the right person to
+          brings complaints from calls, WhatsApp, caretakers and operators into one place and gets the right person to
           fix them.
         </p>
         <div className="g-actions">

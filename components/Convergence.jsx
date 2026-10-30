@@ -17,8 +17,8 @@ const ISSUES = [
     to: { icon: 'alert', tag: 'Repeat fault', title: 'Lock in 2B flagged', sub: 'Third time this month' },
   },
   {
-    from: { icon: 'phone', who: 'Owner', text: 'A guest at Villa 7 called me.' },
-    to: { icon: 'check', tag: 'Handled', title: 'Villa 7 issue logged', sub: 'Owner kept in the loop' },
+    from: { icon: 'phone', who: 'Operator', text: 'A guest at Villa 7 called me.' },
+    to: { icon: 'check', tag: 'Handled', title: 'Villa 7 issue logged', sub: 'Operator kept in the loop' },
   },
 ];
 
@@ -148,7 +148,7 @@ export default function Convergence() {
   );
 
   return (
-    <div className="conv" role="img" aria-label="Four issues from a guest call, a guest WhatsApp message, a caretaker and an owner, each handled in one place by Veloce">
+    <div className="conv" role="img" aria-label="Four issues from a guest call, a guest WhatsApp message, a caretaker and an operator, each handled in one place by Veloce">
       <div className="conv-top" aria-hidden="true"><span>Coming in</span><span>Handled</span></div>
 
       <div className="conv-rows" aria-hidden="true">

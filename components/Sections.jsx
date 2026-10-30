@@ -27,7 +27,7 @@ export function Operators() {
 
 const TODAY = [
   { t: 'Day 1, 21:40', p: 'Your guest tells the caretaker the AC isn’t cooling.', w: 'Caretaker’s phone', icon: 'user' },
-  { t: 'Day 1, 22:05', p: 'The caretaker rings the owner, who says to look at it tomorrow.', w: 'Owner’s phone', icon: 'phone' },
+  { t: 'Day 1, 22:05', p: 'The caretaker rings the operator, who says to look at it tomorrow.', w: 'Operator’s phone', icon: 'phone' },
   { t: 'Day 2, 10:15', p: 'Your ops manager spots it in a group chat and asks which room.', w: 'WhatsApp group', icon: 'chat' },
   { t: 'Day 2, 13:30', p: 'The AC technician can’t come until Thursday.', w: 'Vendor call', icon: 'wrench' },
   { t: 'Day 2, 20:10', p: 'The guest complains again, this time at the front desk.', w: 'Front desk', icon: 'loop', again: true },

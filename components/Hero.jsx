@@ -16,7 +16,7 @@ export default function Hero() {
             </div>
             <h1>Better ratings, repeat stays and referrals, run from WhatsApp</h1>
             <p className="lede">
-              Veloce is a hospitality operations platform that works inside WhatsApp. Your guests, staff and owners
+              Veloce is a hospitality operations platform that works inside WhatsApp. Guests, staff and operators
               use the chat they already have, and Veloce fixes issues, runs bookings and keeps your books.
             </p>
             <div className="cta-row">
