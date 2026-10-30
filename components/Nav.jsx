@@ -10,7 +10,7 @@ const SECTIONS = [
   { href: '#loop', label: 'The loop' },
   { href: '#maintenance', label: 'Features' },
   { href: '#platform', label: 'Platform' },
-  { href: '#owners', label: 'For owners' },
+  { href: '#operators', label: 'For operators' },
   { href: '#faq', label: 'FAQ' },
 ];
 

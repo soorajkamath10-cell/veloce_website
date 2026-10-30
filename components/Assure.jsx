@@ -3,7 +3,7 @@ import { setupTime } from '@/lib/proof';
 
 // Facts that make starting feel low-risk. Shown under the hero and contact buttons.
 export default function Assure() {
-  const items = ['No PMS needed', 'Staff stay on WhatsApp, no new app', 'First month free'];
+  const items = ['No PMS needed, or keep yours', 'Staff stay on WhatsApp, no new app', 'First month free'];
   if (setupTime) items.push(`Live in ${setupTime}`);
   return (
     <ul className="assure">

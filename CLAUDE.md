@@ -58,6 +58,10 @@ Components are server components unless they need state or effects. Only then ad
 - The main call to action is the free month (`#trial`); the 30-minute call stays as the second option.
 - Veloce stitches operations together: complaints from calls, WhatsApp, caretakers and owners, plus issue history and repeat-fault intelligence.
 - Only claim what the product does today. Do not invent features, customers, logos, testimonials or results.
+- PMS: lead with "run without a PMS", and always pair it with "or keep yours, Veloce works alongside it". Both buyer types matter.
+- Say "operator" for the person running the business, never "owner".
+- Never describe Veloce as "one WhatsApp thread" or a WhatsApp group.
+- The footer credit "Built by gAI Ventures" is plain text, not a link.
 
 ## Copy rules (strict)
 

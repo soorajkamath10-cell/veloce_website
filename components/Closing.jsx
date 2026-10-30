@@ -1,7 +1,7 @@
 import { Icon } from './Icons';
 import Logo from './Logo';
 import Soc2Badge from './Soc2Badge';
-import { DEMO_URL, LOGIN_URL, CONTACT_URL, QUESTION_URL, CONTACT_EMAIL, COMPANY_URL, ext } from '@/lib/siteConfig';
+import { DEMO_URL, LOGIN_URL, CONTACT_URL, QUESTION_URL, CONTACT_EMAIL, ext } from '@/lib/siteConfig';
 import { FAQS } from '@/lib/faq';
 import { whatsappUrl } from '@/lib/proof';
 
@@ -31,7 +31,7 @@ export function Contact() {
     <section className="wrap contact-sec" id="contact" aria-labelledby="contact-h">
       <div className="cta cta-center">
         <p className="eyebrow eyebrow-dark">Ready when you are</p>
-        <h2 id="contact-h">Run every home from one WhatsApp thread</h2>
+        <h2 id="contact-h">Run every home from WhatsApp</h2>
         <p>Free for your first month. We set up your first homes within a working day.</p>
         <div className="cta-row">
           <a className="btn btn-primary" href="#trial">Start your free month</a>
@@ -51,7 +51,7 @@ export function Footer() {
         <div>
           <Logo height={38} />
           <p>A hospitality operations platform that runs on WhatsApp: guest messages, maintenance, housekeeping, bookings and finance.</p>
-          <p className="fine">Built by <a href={COMPANY_URL} {...ext}>gAI Ventures</a></p>
+          <p className="fine">Built by gAI Ventures</p>
           <Soc2Badge className="foot-soc2" />
         </div>
         <div>
