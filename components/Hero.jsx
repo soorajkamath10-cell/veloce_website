@@ -17,8 +17,8 @@ export default function Hero() {
               the room, gets it to the right person, and keeps all your properties in one place.
             </p>
             <div className="cta-row">
-              <a className="btn btn-light" href={DEMO_URL} {...ext}>Book a 30-minute call</a>
-              <a className="btn btn-on-dark" href="#gains">See what you'd gain</a>
+              <a className="btn btn-light" href="#trial">Start your free month</a>
+              <a className="btn btn-on-dark" href={DEMO_URL} {...ext}>Book a 30-minute call</a>
               {whatsappUrl && <a className="btn btn-on-dark" href={whatsappUrl} {...ext}>Message us on WhatsApp</a>}
             </div>
             <Assure />

@@ -3,7 +3,9 @@ import Hero from '@/components/Hero';
 import Proof from '@/components/Proof';
 import Compare from '@/components/Compare';
 import { Operators, Problem, Steps, Housekeeping } from '@/components/Sections';
+import { NoPms, Finance } from '@/components/Story';
 import Gains from '@/components/Gains';
+import Trial from '@/components/Trial';
 import { Faq, Contact, Footer } from '@/components/Closing';
 import { FAQS } from '@/lib/faq';
 
@@ -25,9 +27,12 @@ export default function Page() {
         <Operators />
         <Problem />
         <Steps />
-        <Compare />
         <Housekeeping />
+        <Finance />
+        <NoPms />
+        <Compare />
         <Gains />
+        <Trial />
         <Faq />
         <Contact />
       </main>

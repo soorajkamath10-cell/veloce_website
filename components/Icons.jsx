@@ -18,6 +18,12 @@ const paths = {
   desk: <path {...S} d="M3 10h18v3H3zM5 13v7M19 13v7M9 10V6h6v4" />,
   star: <path {...S} d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z" />,
   check: <path {...S} strokeWidth="2" d="M5 12.5l4.5 4.5L19 7.5" />,
+  receipt: (
+    <>
+      <path {...S} d="M6 3h12v18l-3-2-3 2-3-2-3 2z" />
+      <path {...S} d="M9 8h6M9 12h6M9 16h3" />
+    </>
+  ),
   alert: (
     <>
       <path {...S} strokeWidth="1.8" d="M12 3.5l9.5 16.5h-19z" />

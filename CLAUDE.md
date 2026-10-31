@@ -36,6 +36,9 @@ The marketing website for Veloce, a hospitality operations platform built by gAI
 | Property-type ticker, problem timelines, how-it-helps rows, housekeeping | `components/Sections.jsx` |
 | Calculator UI | `components/SavingsModel.jsx`; its state lives in `components/Gains.jsx` |
 | Calculator maths, currencies, default assumptions | `lib/model.js` |
+| Finance and PMS sections | `components/Story.jsx` |
+| Free month section and form | `components/Trial.jsx`, `components/TrialForm.jsx` (client), settings in `lib/trial.js` |
+| Trial signup delivery | FormSubmit to sooraj@gai.ventures; see `lib/trial.js` |
 | FAQ, contact card, footer | `components/Closing.jsx` |
 | Links and research sources | `lib/siteConfig.js` |
 | Logo | `components/Logo.jsx` using `public/veloce-logo-light.png` |
@@ -47,10 +50,17 @@ Components are server components unless they need state or effects. Only then ad
 ## Positioning
 
 - Category line: **"Hospitality operations platform"**. Say "maintenance", not "ticketing" (it reads as bookings). Always include the word hospitality.
-- Lead with outcomes: higher guest ratings, more bookings and repeat stays, less time spent on operations, and what the owner does with the time saved.
+- Lead with outcomes: higher guest ratings, more bookings and repeat stays, less time spent on operations, and what the operator does with the time saved.
 - Voice calls and WhatsApp are tools that serve those outcomes. They are not the headline and not the moat. Do not lead with "AI voice calls".
 - Veloce stitches operations together: complaints from calls, WhatsApp, caretakers and owners, plus issue history and repeat-fault intelligence.
 - Only claim what the product does today. Do not invent features, customers, logos, testimonials or results.
+- PMS: lead with "no PMS needed", and always pair it with "or keep yours, Veloce works alongside it".
+- Say "operator" for the person running the business, never "owner".
+- WhatsApp is one channel, not the headline. Never describe Veloce as "one WhatsApp thread" or a WhatsApp group.
+- The footer credit "Built by gAI Ventures" is plain text, not a link.
+- The free month (#trial) is the main call to action; the 30-minute call is second.
+- Finance: expenses and revenue are live. Invoices stay "Coming soon" until they ship.
+- The /privacy page must stay: Meta lead forms link to it.
 
 ## Copy rules (strict)
 

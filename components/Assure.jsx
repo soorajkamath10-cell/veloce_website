@@ -3,7 +3,7 @@ import { setupTime } from '@/lib/proof';
 
 // Facts that make booking a call feel low-risk. Shown under the call buttons.
 export default function Assure() {
-  const items = ['Works alongside your PMS', 'Staff use WhatsApp, no new app'];
+  const items = ['No PMS needed, or keep yours', 'Staff use WhatsApp, no new app'];
   if (setupTime) items.push(`Live in ${setupTime}`);
   return (
     <ul className="assure">

@@ -2,7 +2,7 @@ import { Icon } from './Icons';
 import Assure from './Assure';
 import Logo from './Logo';
 import Soc2Badge from './Soc2Badge';
-import { DEMO_URL, LOGIN_URL, CONTACT_URL, QUESTION_URL, CONTACT_EMAIL, COMPANY_URL, ext } from '@/lib/siteConfig';
+import { DEMO_URL, LOGIN_URL, CONTACT_URL, QUESTION_URL, CONTACT_EMAIL, ext } from '@/lib/siteConfig';
 import { FAQS } from '@/lib/faq';
 import { whatsappUrl } from '@/lib/proof';
 
@@ -62,7 +62,7 @@ export function Footer() {
         <div>
           <Logo height={38} />
           <p>A hospitality operations platform for maintenance, housekeeping and guest engagement.</p>
-          <p className="fine">Built by <a href={COMPANY_URL} {...ext}>gAI Ventures</a></p>
+          <p className="fine">Built by gAI Ventures</p>
           <Soc2Badge className="foot-soc2" />
         </div>
         <div>

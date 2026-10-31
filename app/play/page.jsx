@@ -5,7 +5,7 @@ import './play.css';
 export const metadata = {
   title: 'Keep your rating up | Veloce',
   description:
-    'A one-minute game for hospitality operators. Route guest complaints from calls, WhatsApp, caretakers and owners, then watch Veloce take over for the last 20 seconds.',
+    'A one-minute game for hospitality operators. Route guest complaints from calls, WhatsApp, caretakers and operators, then watch Veloce take over for the last 20 seconds.',
   openGraph: {
     title: 'Keep your rating up | Veloce',
     description: 'A one-minute game about guest complaints across a portfolio of properties.',

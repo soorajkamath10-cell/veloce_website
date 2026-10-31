@@ -11,10 +11,12 @@ const MARK = {
 
 const ROWS = [
   { h: 'Hears from guests during the stay', m: ['no', 'part', 'no', 'yes'] },
-  { h: 'One record across calls, WhatsApp, caretakers and owners', m: ['no', 'part', 'part', 'yes'] },
+  { h: 'One record across calls, WhatsApp, caretakers and operators', m: ['no', 'part', 'part', 'yes'] },
   { h: 'Flags repeat faults', m: ['no', 'no', 'part', 'yes'] },
   { h: 'Staff stay on WhatsApp', m: ['yes', 'no', 'no', 'yes'] },
   { h: 'Routes and chases until it’s fixed', m: ['no', 'part', 'yes', 'yes'] },
+  { h: 'Calendar, channel sync and direct bookings', m: ['no', 'yes', 'no', 'yes'] },
+  { h: 'Revenue and expenses by home', m: ['part', 'part', 'no', 'yes'] },
 ];
 
 export default function Compare() {
