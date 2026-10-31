@@ -1,10 +1,10 @@
 import { Hanken_Grotesk, Newsreader } from 'next/font/google';
 import './globals.css';
-import { CONTACT_EMAIL, COMPANY_URL } from '@/lib/siteConfig';
+import { CONTACT_EMAIL } from '@/lib/siteConfig';
 
 const SITE = 'https://www.veloce7.com';
 const DESCRIPTION =
-  'Veloce is a hospitality operations platform that runs on WhatsApp. Guests, staff and owners use the chat they already have, and Veloce handles issues, bookings, housekeeping and finance. Better ratings, repeat stays and referrals.';
+  'Veloce hears about guest problems while the guest is still there, gets them to the right person, and keeps every property in one place. Higher ratings, more bookings, less time on operations.';
 
 // Structured data for search engines and AI assistants. No prices.
 const jsonLd = [
@@ -15,7 +15,7 @@ const jsonLd = [
     url: SITE,
     logo: `${SITE}/logo.png`,
     email: CONTACT_EMAIL,
-    parentOrganization: { '@type': 'Organization', name: 'gAI Ventures', url: COMPANY_URL },
+    parentOrganization: { '@type': 'Organization', name: 'gAI Ventures' },
   },
   {
     '@context': 'https://schema.org',
@@ -27,7 +27,7 @@ const jsonLd = [
     operatingSystem: 'Web',
     description: DESCRIPTION,
     audience: { '@type': 'BusinessAudience', audienceType: 'Short-term rental, serviced apartment, boutique hotel and villa operators' },
-    publisher: { '@type': 'Organization', name: 'gAI Ventures', url: COMPANY_URL },
+    publisher: { '@type': 'Organization', name: 'gAI Ventures' },
   },
 ];
 
@@ -40,7 +40,7 @@ export const metadata = {
   metadataBase: new URL(SITE),
   openGraph: {
     title: 'Veloce | Hospitality operations platform',
-    description: 'Better ratings, repeat stays and referrals, run from WhatsApp.',
+    description: 'Higher ratings, more bookings, less time on operations.',
     url: SITE,
     siteName: 'Veloce',
     type: 'website',

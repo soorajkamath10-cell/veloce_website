@@ -2,10 +2,10 @@ import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
 import Proof from '@/components/Proof';
 import Compare from '@/components/Compare';
-import { Operators, Problem } from '@/components/Sections';
-import { Announce, Loop, Maintenance, Housekeeping, Finance, Platform, Owners } from '@/components/Story';
-import Trial from '@/components/Trial';
+import { Operators, Problem, Steps, Housekeeping } from '@/components/Sections';
+import { NoPms, Finance } from '@/components/Story';
 import Gains from '@/components/Gains';
+import Trial from '@/components/Trial';
 import { Faq, Contact, Footer } from '@/components/Closing';
 import { FAQS } from '@/lib/faq';
 
@@ -20,19 +20,16 @@ export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
-      <Announce />
       <Nav />
       <main>
         <Hero />
         <Proof />
         <Operators />
-        <Loop />
         <Problem />
-        <Maintenance />
+        <Steps />
         <Housekeeping />
         <Finance />
-        <Platform />
-        <Owners />
+        <NoPms />
         <Compare />
         <Gains />
         <Trial />

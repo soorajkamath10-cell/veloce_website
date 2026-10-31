@@ -1,7 +1,8 @@
 import { Icon } from './Icons';
+import Assure from './Assure';
 import Logo from './Logo';
 import Soc2Badge from './Soc2Badge';
-import { DEMO_URL, LOGIN_URL, CONTACT_URL, QUESTION_URL, CONTACT_EMAIL, COMPANY_URL, ext } from '@/lib/siteConfig';
+import { DEMO_URL, LOGIN_URL, CONTACT_URL, QUESTION_URL, CONTACT_EMAIL, ext } from '@/lib/siteConfig';
 import { FAQS } from '@/lib/faq';
 import { whatsappUrl } from '@/lib/proof';
 
@@ -29,16 +30,26 @@ export function Faq() {
 export function Contact() {
   return (
     <section className="wrap contact-sec" id="contact" aria-labelledby="contact-h">
-      <div className="cta cta-center">
-        <p className="eyebrow eyebrow-dark">Ready when you are</p>
-        <h2 id="contact-h">Run every home from one WhatsApp thread</h2>
-        <p>Free for your first month. We set up your first homes within a working day.</p>
-        <div className="cta-row">
-          <a className="btn btn-primary" href="#trial">Start your free month</a>
-          <a className="btn btn-on-dark" href={DEMO_URL} {...ext}>Book a 30-minute call</a>
-          {whatsappUrl && <a className="btn btn-on-dark" href={whatsappUrl} {...ext}>Message us on WhatsApp</a>}
+      <div className="cta">
+        <div>
+          <h2 id="contact-h">Bring one property to a 30-minute call</h2>
+          <p>We’ll walk through what Veloce would change there and what it’s worth to you.</p>
+          <div className="cta-row">
+            <a className="btn btn-primary" href={DEMO_URL} {...ext}>Book a 30-minute call</a>
+            <a className="btn btn-on-dark" href={QUESTION_URL} {...ext}>Email a question</a>
+            {whatsappUrl && <a className="btn btn-on-dark" href={whatsappUrl} {...ext}>Message us on WhatsApp</a>}
+          </div>
+          <Assure />
         </div>
-        <p className="cta-mail">Or email <a href={CONTACT_URL} {...ext}>{CONTACT_EMAIL}</a>. Sooraj replies within a working day. NDA on request.</p>
+        <div className="contact">
+          <span className="av">SK</span><b>Sooraj Kamath</b><small>gAI Ventures</small>
+          <ul>
+            <li><a href={CONTACT_URL} {...ext}>{CONTACT_EMAIL}</a></li>
+            <li>Replies within a working day</li>
+            <li>NDA on request</li>
+            <li>SOC 2 Type II compliant</li>
+          </ul>
+        </div>
       </div>
     </section>
   );
@@ -50,18 +61,15 @@ export function Footer() {
       <div className="foot">
         <div>
           <Logo height={38} />
-          <p>A hospitality operations platform that runs on WhatsApp: guest messages, maintenance, housekeeping, bookings and finance.</p>
-          <p className="fine">Built by <a href={COMPANY_URL} {...ext}>gAI Ventures</a></p>
+          <p>A hospitality operations platform for maintenance, housekeeping and guest engagement.</p>
+          <p className="fine">Built by gAI Ventures</p>
           <Soc2Badge className="foot-soc2" />
         </div>
         <div>
           <h4>Veloce</h4>
           <ul>
-            <li><a href="#loop">The loop</a></li>
-            <li><a href="#maintenance">Maintenance</a></li>
-            <li><a href="#housekeeping">Housekeeping</a></li>
-            <li><a href="#finance">Finance</a></li>
-            <li><a href="#platform">Platform</a></li>
+            <li><a href="#problem">Why it matters</a></li>
+            <li><a href="#helps">How it helps</a></li>
             <li><a href="#compare">Why Veloce</a></li>
             <li><a href="#gains">See the impact</a></li>
             <li><a href="#faq">FAQ</a></li>
@@ -71,7 +79,6 @@ export function Footer() {
         <div>
           <h4>Get in touch</h4>
           <ul>
-            <li><a href="#trial">Start your free month</a></li>
             <li><a href={DEMO_URL} {...ext}>Book a call</a></li>
             <li><a href={CONTACT_URL} {...ext}>Email Sooraj</a></li>
             {whatsappUrl && <li><a href={whatsappUrl} {...ext}>WhatsApp</a></li>}
